@@ -11,6 +11,8 @@ src/bin/phonetisaurus-arpa2wfst
 src/bin/phonetisaurus-g2pfst
 src/bin/phonetisaurus-g2prnn
 src/bin/rnnlm
+.vs
+Release
 .*\.pyc$
 models/
 .*\.egg-info/

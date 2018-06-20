@@ -137,7 +137,6 @@ timespec get_time( ){
 #else
 timespec get_time( ){
   timespec ts;
-  clock_gettime(CLOCK_REALTIME, &ts);
   return ts;
 }
 #endif
@@ -154,7 +153,7 @@ timespec diff(timespec start, timespec end){
   return temp;
 }
 
-DEFINE_bool   (help, false, "show usage information");
+DEFINE_bool   (phon_help, false, "show usage information");
 void PhonetisaurusSetFlags (const char* usage, int* argc, char*** argv,
 			    bool remove_flags) {
   //Workaround for Apple's. It just skips all the options processing. 
@@ -205,7 +204,7 @@ void PhonetisaurusSetFlags (const char* usage, int* argc, char*** argv,
     LOG(FATAL) << "SetFlags: Bad option: " << (*argv)[index];
   }
   
-  if (FLAGS_help) {
+  if (FLAGS_phon_help) {
     //Just show program flags - NOT general OpenFst flags
     // There are too many and they are just confusing.
     std::set< pair<string, string> > usage_set;
