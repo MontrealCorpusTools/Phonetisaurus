@@ -43,9 +43,6 @@ autom4te.cache
 Makefile
 Phonetisaurus.la
 libtool
-phonetisaurus-align
-phonetisaurus-arpa2wfst
-phonetisaurus-g2pfst
 phonetisaurus-g2prnn
 python/.deps/
 python/.dirstamp
