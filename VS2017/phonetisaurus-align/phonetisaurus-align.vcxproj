@@ -29,7 +29,7 @@
     <ProjectGuid>{FB64D2DB-9D9E-46CD-AAF6-9FB227D0F2D8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>phonetisaurusalign</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -87,9 +87,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);E:\Dev\MFA\Phonetisaurus\src;E:\Dev\MFA\kaldi\windows\openfst\src\include;E:\Dev\MFA\Phonetisaurus\src\3rdparty\utfcpp</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;E:\Dev\MFA\kaldi\windows\openfst\build64\src\lib\Release</LibraryPath>
-    <SourcePath>$(VC_SourcePath);E:\Dev\MFA\Phonetisaurus\src\3rdparty\utfcpp\utf8</SourcePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\src;..\..\..\kaldi\tools\openfst\src\include;..\..\src\3rdparty\utfcpp</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;..\..\..\kaldi\tools\openfst\build64\src\lib\Release</LibraryPath>
+    <SourcePath>$(VC_SourcePath);..\..\src\3rdparty\utfcpp\utf8</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
